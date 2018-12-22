@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_260sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_13sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingRight="@dimen/_13sdp"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/segoeui"
+        android:text="@string/chon_ung_dung"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_230sdp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ListView
+            android:id="@+id/list_app"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_230sdp"
+            android:dividerHeight="20dp"></ListView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_25"
+            app:mrl_rippleColor="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/text_cancel"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@drawable/button2"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/huy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            app:mrl_rippleColor="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/text_ok"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button1"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/ok"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+</LinearLayout>

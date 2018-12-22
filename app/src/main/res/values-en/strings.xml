@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlashLight</string>
+    <string name="bat_tat">On / Off</string>
+    <string name="trang_thai">Status</string>
+    <string name="cuoc_goi_den">Incoming Phone</string>
+    <string name="tin_nhan_den">Incoming Messsage</string>
+    <string name="thong_bao_den">Incoming Notification</string>
+    <string name="cau_hinh">Configuration</string>
+    <string name="rung">Vibrate</string>
+    <string name="app">Application</string>
+    <string name="chon_ung_dung">Choose app</string>
+    <string name="toc_do">Speed</string>
+    <string name="chon_toc_do">Configure speed</string>
+    <string name="huy">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="thoi_gian_bat">Time on</string>
+    <string name="thoi_gian_tat">Time off</string>
+    <string name="thoi_gian_chay">Time run</string>
+    <string name="thu">Try</string>
+    <string name="luu">Save</string>
+    <string name="flash_dang_hoat_dong">Flash is working!</string>
+    <string name="cho_phep">Allows FlashLight manage Notification on device</string>
+    <string name="note1">Application which want to receive notification flash</string>
+    <string name="note2">    Configure speed of brightness of installed application and message
+</string>
+    <string name="tat_tinh_nang">Turn off the flashlight feature</string>
+    <string name="bat_tinh_nang">Turn on the flashlight feature</string>
+    <string name="tu_choi">Deny</string>
+    <string name="chap_nhan">Accept</string>
+</resources>

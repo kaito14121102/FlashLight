@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Nháy đèn</string>
+    <string name="bat_tat">Bật / Tắt</string>
+    <string name="trang_thai">Trạng thái</string>
+    <string name="cuoc_goi_den">Cuộc gọi đến</string>
+    <string name="tin_nhan_den">Tin nhắn đến</string>
+    <string name="thong_bao_den">Thông báo đến</string>
+    <string name="cau_hinh">Cấu hình</string>
+    <string name="rung">Rung</string>
+    <string name="app">Ứng dụng</string>
+    <string name="chon_ung_dung">Chọn ứng dụng</string>
+    <string name="toc_do">Tốc độ</string>
+    <string name="chon_toc_do">Chỉnh tốc độ</string>
+    <string name="huy">Hủy</string>
+    <string name="ok">Ok</string>
+    <string name="thoi_gian_bat">Thời gian bật</string>
+    <string name="thoi_gian_tat">Thời gian tắt</string>
+    <string name="thoi_gian_chay">Thời gian chạy</string>
+    <string name="thu">Thử</string>
+    <string name="luu">Lưu</string>
+    <string name="flash_dang_hoat_dong">Flash đang hoạt động!</string>
+    <string name="cho_phep">Cho phép Nháy đèn thực hiện và quản lý thông báo trên thiết bị</string>
+    <string name="note1">Các ứng dụng muốn nhận thông báo đèn</string>
+    <string name="note2">Điều chỉnh tốc độ nháy và thời gian sáng của ứng dụng và tin nhắn</string>
+    <string name="tat_tinh_nang">Tắt tính năng nháy đèn</string>
+    <string name="bat_tinh_nang">Bật tính năng nháy đèn</string>
+    <string name="tu_choi">Từ chối</string>
+    <string name="chap_nhan">Chấp nhận</string>
+</resources>

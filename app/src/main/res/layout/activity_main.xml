@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:fontFamily="@font/segoeui"
+            android:text="Flash Alert"
+            android:textColor="#fff"
+            android:textSize="@dimen/_17sdp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_87sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_header"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/text_on_off"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/bat_tat"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold" />
+
+                    <Switch
+                        android:id="@+id/switch_flash"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/textTitle"
+                    android:text="@string/trang_thai" />
+
+                <LinearLayout
+                    android:id="@+id/linear_phone"
+                    style="@style/itemLinear">
+
+                    <ImageView
+                        style="@style/imageItemLinear"
+                        android:src="@drawable/ic1" />
+
+                    <TextView
+                        android:id="@+id/test"
+                        style="@style/textItemLinear"
+                        android:text="@string/cuoc_goi_den" />
+
+                    <Switch
+                        android:id="@+id/switch_phone"
+                        style="@style/switchItemLinear" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_message"
+                    style="@style/itemLinear">
+
+                    <ImageView
+                        style="@style/imageItemLinear"
+                        android:src="@drawable/ic2" />
+
+                    <TextView
+                        style="@style/textItemLinear"
+                        android:text="@string/tin_nhan_den" />
+
+                    <Switch
+                        android:id="@+id/switch_message"
+                        style="@style/switchItemLinear" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_notify"
+                    style="@style/itemLinear">
+
+                    <ImageView
+                        style="@style/imageItemLinear"
+                        android:src="@drawable/ic3" />
+
+                    <TextView
+                        style="@style/textItemLinear"
+                        android:text="@string/thong_bao_den" />
+
+                    <Switch
+                        android:id="@+id/switch_notifi"
+                        style="@style/switchItemLinear" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/textTitle"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/cau_hinh" />
+
+                <LinearLayout
+                    android:id="@+id/linear_vibrate"
+                    style="@style/itemLinear">
+
+                    <ImageView
+                        style="@style/imageItemLinear"
+                        android:src="@drawable/ic4" />
+
+                    <TextView
+                        style="@style/textItemLinear"
+                        android:text="@string/rung" />
+
+                    <Switch
+                        android:id="@+id/switch_vibrate"
+                        style="@style/switchItemLinear" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/app"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            app:mrl_rippleColor="@color/colorPrimary">
+
+                            <Button
+                                android:id="@+id/button_choose_app"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="right"
+                                android:background="@drawable/button_shape"
+                                android:fontFamily="@font/segoeui"
+                                android:text="@string/chon_ung_dung"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/_10sdp" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                d
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/note1"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/toc_do"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            app:mrl_rippleColor="@color/colorPrimary">
+
+                            <Button
+                                android:id="@+id/button_choose_speed"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_35sdp"
+                                android:layout_gravity="right"
+                                android:background="@drawable/button_shape"
+                                android:fontFamily="@font/segoeui"
+                                android:text="@string/chon_toc_do"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"
+                                android:textSize="@dimen/_10sdp" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="@string/note2"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
